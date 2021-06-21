@@ -1,13 +1,7 @@
 window.addEventListener("load", () => {
-    document.querySelector(".container").addEventListener("click", () => {
-        document.querySelector(".sun-logo").classList.toggle("animate-sun");
-        document.querySelector(".moon-logo").classList.toggle("animate-moon");
-        document.querySelector("body").classList.toggle("dark");
-    })
-
     noticias.forEach((noticia) => {
         let template = `
-        <div class="item">
+        <div class="noticia">
         <img src="${noticia.imgUrl}">
         <h2>${noticia.titulo}</h2>
         <h6>${noticia.fecha}</h6>
