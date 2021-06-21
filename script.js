@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     noticias.forEach((noticia) => {
         let template = `
-        <div class="noticia">
+        <div class="item">
         <img src="${noticia.imgUrl}">
         <h2>${noticia.titulo}</h2>
         <h6>${noticia.fecha}</h6>
