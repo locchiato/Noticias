@@ -1,0 +1,66 @@
+/* estilos para tema oscuro ---------------------------------------------------------------------------------------------- */
+
+
+/* los suigientes estilos son los que usaremos para aplicar el modo oscuro, ustedes deberán modificar los selectores para
+poder resolver el ejercicio */
+
+.container {
+    position: relative;
+}
+
+.dark {
+    background-color: rgb(39, 39, 39);
+}
+
+.dark h1,
+.dark h2 {
+    background-color: rgb(19, 19, 19);
+    color: rgb(170, 170, 170);
+    border-color: black;
+}
+
+.dark .item {
+    background-color: rgb(19, 19, 19);
+    border-color: black;
+    color: rgb(230, 230, 230);
+}
+
+.sun,
+.moon {
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.moon {
+    position: absolute;
+    inset: 0;
+}
+
+.moon-logo {
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+}
+
+.sun-logo {
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+}
+
+.animate-sun {
+    opacity: 0;
+    transform: translateY(20%) rotateZ(100deg);
+    color: aliceblue;
+}
+
+.animate-moon {
+    opacity: 1;
+    transform: translateY(0%) rotateZ(0deg);
+    color: aliceblue;
+}
+
+.moon-logo,
+.sun-logo,
+body {
+    transition: all 1s ease-in-out;
+}
