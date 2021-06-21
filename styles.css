@@ -10,6 +10,11 @@ body {
     background-color: rgb(219, 219, 219);
 }
 
+section {
+    display: flex;
+    justify-content: center;
+}
+
 h1,
 h2 {
     display: flex;
